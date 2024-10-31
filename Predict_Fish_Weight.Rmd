@@ -71,8 +71,11 @@ This data frame shows the height and weight variables are the best model.
 
 ### Best Models
 
+```{r}
+which.max(summary.out$adjr2)
+```
 
-
+This shows that the model two is the best model to express the data when looking at the Adjusted R-squared value.
 
 
 ### Best Two regressor model
