@@ -90,8 +90,23 @@ The best model would have to be the perch model 2, this data summary shows model
 
 ## Pike
 
+```{r}
+library(leaps)
+regsubsets.out <-
+    regsubsets(Weight ~ .,
+               data = Pike,
+               nbest = 1,       # 1 best model for each number of predictors
+               nvmax = NULL,    # NULL for no limit on number of variables
+               force.in = NULL, force.out = NULL,
+               method = "exhaustive")
 
+summary.out <- summary(regsubsets.out)
+as.data.frame(summary.out$outmat)
+library(car)
+subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
+```
 
+Now for this model the best appears to be all L1, L2, L3, H, and W. But the best two regressor model appears to be the model including L1 and L3.
 
 ### Best Models
 
