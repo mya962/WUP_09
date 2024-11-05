@@ -79,7 +79,11 @@ This shows that the model two is the best model to express the data when looking
 
 
 ### Best Two regressor model
+```{r}
+summary.out$which[2,]
+```
 
+The best model would have to be the perch model 2, this data summary shows model 2 which has the Adjusted r-squared value having two variables meaning model 2 is the best two regression model.
 
 
 
