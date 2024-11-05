@@ -117,18 +117,10 @@ which.max(summary.out$adjr2)
 The model with 5 variables is the best model.
 
 ### Best Two regressor model
-
+Using leaps we were able to focus its power onto the adjusted r-squared value. Then it would give us only the highest of adjusted r-squared valuesfor 1, 2, 3, 4 and 5 variables for pike. Using this kind of leaps it shows that L1 and L3 are the best two regresses for the highest adjusted r-squared value making it the best two regressor model.  
 
 
 ## Roach
-
-
-
-### Best Models
-
-
-
-### Best Two regressor model
 
 
 
