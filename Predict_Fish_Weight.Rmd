@@ -110,7 +110,11 @@ Now for this model the best appears to be all L1, L2, L3, H, and W. But the best
 
 ### Best Models
 
+```{r}
+which.max(summary.out$adjr2)
+```
 
+The model with 5 variables is the best model.
 
 ### Best Two regressor model
 
